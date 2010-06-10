@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:transmogrifier="http://namespaces.plone.org/transmogrifier"
+    i18n_domain="collective.blueprint.localroles">
+
+    <include package="collective.transmogrifier" file="meta.zcml"/> 
+    <include package="collective.transmogrifier"/>
+
+    <utility component="collective.blueprint.localroles.getLocalRoles"
+             name="collective.blueprint.getlocalroles" />
+
+     <utility component="collective.blueprint.localroles.setLocalRoles"
+              name="collective.blueprint.setlocalroles" />
+
+</configure>
